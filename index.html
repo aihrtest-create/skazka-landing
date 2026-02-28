@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День рождения в парке СКАЗКА — от 25 000 ₽</title>
+    <meta name="description"
+        content="День рождения в парке Сказка, Крылатское. Квесты, шоу-программы, банкетные локации. Организуем праздник мечты для детей 4-13 лет.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="logo">
+                <img src="img/logo.png" alt="Сказка - Парк Развлечений">
+            </a>
+            <nav class="nav">
+                <a href="#programs">Программы</a>
+                <a href="#packages">Пакеты</a>
+                <a href="#extras">Допуслуги</a>
+                <a href="#locations">Локации</a>
+                <a href="#reviews">Отзывы</a>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:+74951336556" class="phone">+7 495 133 65 56</a>
+                <a href="#form" class="btn btn-pink btn-sm">Забронировать</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-rounded">
+            <div class="hero-bg">
+                <video autoplay loop muted playsinline class="hero-video">
+                    <source src="img/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">🎉 День рождения «всё включено» — от 25 000 ₽</div>
+                <h1>День рождения в самом большом<br>парке развлечений <span class="text-gradient">Москвы</span></h1>
+                <p class="hero-sub">Квесты, шоу, банкеты — всё в одном месте</p>
+
+                <div class="hero-buttons">
+                    <a href="#programs" class="btn btn-pink btn-lg">Выбрать программу</a>
+                    <a href="https://wa.me/79912916400" class="btn btn-outline-white btn-lg" target="_blank">
+                        💬 WhatsApp
+                    </a>
+                </div>
+
+                <div class="hero-yandex">
+                    <span class="yandex-icon">Я</span>
+                    <span class="yandex-stars">★★★★★</span>
+                    <span class="yandex-rating">5.0</span>
+                    <span class="yandex-label">на Яндекс Картах</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Шаг 1</span>
+                <h2>Выберите приключение</h2>
+                <p class="section-sub">Каждая программа — это 1.5-2 часа незабываемых эмоций</p>
+            </div>
+
+            <div class="age-filter">
+                <button class="age-pill active" data-age="all">Все программы</button>
+                <button class="age-pill" data-age="4-7">🧸 4–7 лет</button>
+                <button class="age-pill" data-age="7-10">🔍 7–10 лет</button>
+                <button class="age-pill" data-age="10-13">🎮 10–13 лет</button>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card featured">
+                    <div class="program-badge">🏆 ХИТ №1</div>
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Идеальное ограбление">
+                    </div>
+                    <div class="program-info">
+                        <h3>Идеальное ограбление</h3>
+                        <div class="program-meta">
+                            <span>🕐 2 часа</span>
+                            <span>👥 от 10 детей</span>
+                            <span>🎯 7-12 лет</span>
+                        </div>
+                        <p>Взломать сейф, обойти лазерную защиту и раскрыть тайну — самый популярный квест парка!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>48 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-badge new">🆕 НОВИНКА</div>
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Кибер Праздник">
+                    </div>
+                    <div class="program-info">
+                        <h3>Кибер Праздник</h3>
+                        <div class="program-meta">
+                            <span>🕐 2 часа</span>
+                            <span>👥 от 10 детей</span>
+                            <span>🎯 7-12 лет</span>
+                        </div>
+                        <p>Minecraft, Roblox, Brawl Stars — геймерский квест для настоящих кибер-героев!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>39 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Миссия выполнима">
+                    </div>
+                    <div class="program-info">
+                        <h3>Миссия выполнима</h3>
+                        <div class="program-meta">
+                            <span>🕐 2 часа</span>
+                            <span>👥 от 10 детей</span>
+                            <span>🎯 7-12 лет</span>
+                        </div>
+                        <p>Деактивировать «бомбу», пройти полосу препятствий и спасти мир — для смелых!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>51 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Блог Пати">
+                    </div>
+                    <div class="program-info">
+                        <h3>Блог Пати</h3>
+                        <div class="program-meta">
+                            <span>🕐 2 часа</span>
+                            <span>👥 от 10 детей</span>
+                            <span>🎯 9-13 лет</span>
+                        </div>
+                        <p>Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>62 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Планета Дино">
+                    </div>
+                    <div class="program-info">
+                        <h3>Планета Дино</h3>
+                        <div class="program-meta">
+                            <span>🕐 1 час</span>
+                            <span>👥 от 5 детей</span>
+                            <span>🎯 4-8 лет</span>
+                        </div>
+                        <p>Лёгкий старт — идеальный квест для самых маленьких искателей приключений!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>31 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="img/detective.png" alt="Школа Волшебства">
+                    </div>
+                    <div class="program-info">
+                        <h3>Школа Волшебства</h3>
+                        <div class="program-meta">
+                            <span>🕐 2 часа</span>
+                            <span>👥 от 10 детей</span>
+                            <span>🎯 6-10 лет</span>
+                        </div>
+                        <p>Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!</p>
+                        <div class="program-footer">
+                            <div class="program-price">от <strong>40 000 ₽</strong></div>
+                            <a href="#form" class="btn btn-outline">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programs-cta">
+                <p>Не знаете, что выбрать?</p>
+                <a href="#form" class="btn btn-blue">Поможем за 2 минуты — напишите нам →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Шаг 2</span>
+                <h2>Соберите праздник за 1 минуту</h2>
+                <p class="section-sub">Всё включено — вам остаётся только приехать</p>
+            </div>
+
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-tier">SILVER</div>
+                    <div class="package-price">от <strong>65 000</strong> ₽</div>
+                    <p class="package-desc">Идеальный старт для компактного праздника</p>
+                    <ul class="package-features">
+                        <li class="included">✅ Квест 1-2 часа</li>
+                        <li class="included">✅ Еда на 10 детей</li>
+                        <li class="included">✅ Торт 2 кг</li>
+                        <li class="included">✅ Базовый декор</li>
+                        <li class="included">✅ 5 аттракционов</li>
+                        <li class="included">✅ Подарок имениннику</li>
+                        <li class="not-included">Шоу-программа</li>
+                        <li class="not-included">Фотограф</li>
+                    </ul>
+                    <a href="#form" class="btn btn-outline btn-block">Выбрать Silver</a>
+                </div>
+
+                <div class="package-card popular">
+                    <div class="package-popular-badge">⭐ ПОПУЛЯРНЫЙ</div>
+                    <div class="package-tier">GOLD</div>
+                    <div class="package-price">от <strong>120 000</strong> ₽</div>
+                    <p class="package-desc">Всё включено — ни о чём не думайте</p>
+                    <ul class="package-features">
+                        <li class="included">✅ Квест 2 часа</li>
+                        <li class="included">✅ Еда на 10 детей</li>
+                        <li class="included">✅ Торт 3 кг</li>
+                        <li class="included">✅ Расширенный декор</li>
+                        <li class="included">✅ 10 аттракционов</li>
+                        <li class="included">✅ Подарок имениннику</li>
+                        <li class="included">✅ Шоу-программа</li>
+                        <li class="not-included">Фотограф</li>
+                    </ul>
+                    <a href="#form" class="btn btn-pink btn-block">Выбрать Gold</a>
+                </div>
+
+                <div class="package-card premium">
+                    <div class="package-tier">PLATINUM</div>
+                    <div class="package-price">от <strong>180 000</strong> ₽</div>
+                    <p class="package-desc">Максимум впечатлений, VIP-уровень</p>
+                    <ul class="package-features">
+                        <li class="included">✅ Квест 2 часа</li>
+                        <li class="included">✅ Еда на 15 детей</li>
+                        <li class="included">✅ Торт 4 кг</li>
+                        <li class="included">✅ Премиум декор</li>
+                        <li class="included">✅ 10 аттракционов</li>
+                        <li class="included">✅ Подарок имениннику</li>
+                        <li class="included">✅ 2 шоу-программы</li>
+                        <li class="included">✅ Фотограф 2 часа</li>
+                    </ul>
+                    <a href="#form" class="btn btn-outline btn-block">Выбрать Platinum</a>
+                </div>
+            </div>
+
+            <div class="package-testimonial">
+                <img src="img/party.png" alt="" class="testimonial-avatar">
+                <blockquote>
+                    «Мы взяли Gold — ни о чём не думали, всё было готово. Дети в восторге, а мы просто наслаждались
+                    праздником!»
+                    <cite>— Екатерина, мама Миши, 8 лет</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- EXTRAS -->
+    <section class="extras" id="extras">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Шаг 3</span>
+                <h2>Сделайте праздник ярче</h2>
+                <p class="section-sub">40% наших клиентов добавляют шоу к программе</p>
+            </div>
+
+            <div class="extras-grid">
+                <div class="extra-card">
+                    <div class="extra-icon">🧪</div>
+                    <h4>Крио-шоу</h4>
+                    <p>Мороженое из жидкого азота</p>
+                    <div class="extra-price">20 000 ₽</div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">🫧</div>
+                    <h4>Мыльные пузыри</h4>
+                    <p>Гигантские шоу-пузыри</p>
+                    <div class="extra-price">15 000 ₽</div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">⚡</div>
+                    <h4>Тесла-шоу</h4>
+                    <p>Электрическое шоу</p>
+                    <div class="extra-price">20 000 ₽</div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">📸</div>
+                    <h4>Фотограф</h4>
+                    <p>Профессиональная съёмка</p>
+                    <div class="extra-price">от 10 000 ₽</div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">🎨</div>
+                    <h4>Аквагрим</h4>
+                    <p>60 минут рисования на лицах</p>
+                    <div class="extra-price">10 000 ₽</div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">💃</div>
+                    <h4>Дискотека</h4>
+                    <p>Бумажная / шариковая</p>
+                    <div class="extra-price">от 15 000 ₽</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Уникальные локации</h2>
+                <p class="section-sub">Такого нет ни у кого в Москве</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card large">
+                    <img src="img/party.png" alt="Шатры в Дино-парке">
+                    <div class="location-overlay">
+                        <h4>🦕 Шатры в Дино-парке</h4>
+                        <span>25–60 гостей · май–сент.</span>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="img/hero.png" alt="Домик Эльфов">
+                    <div class="location-overlay">
+                        <h4>🧝 Домик Эльфов</h4>
+                        <span>до 30 гостей</span>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="img/party.png" alt="Эколофт">
+                    <div class="location-overlay">
+                        <h4>🌿 Эколофт</h4>
+                        <span>до 40 гостей</span>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="img/hero.png" alt="Мадагаскар">
+                    <div class="location-overlay">
+                        <h4>🍕 Мадагаскар</h4>
+                        <span>до 45 гостей · круглый год</span>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <img src="img/party.png" alt="Базилик">
+                    <div class="location-overlay">
+                        <h4>🍃 Базилик</h4>
+                        <span>до 80 гостей · круглый год</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Что говорят родители</h2>
+                <p class="section-sub">487+ праздников — и каждый запомнился</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p>«Лучший день рождения за все 10 лет! Квест "Идеальное ограбление" — дети до сих пор обсуждают.
+                        Отдельное спасибо аниматору!»</p>
+                    <div class="review-author">
+                        <strong>Анна</strong>
+                        <span>мама Артёма, 10 лет</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p>«Брали пакет Gold на 15 детей. Мы вообще ни о чём не думали — всё организовано идеально. Торт
+                        потрясающий, аттракционы без очередей!»</p>
+                    <div class="review-author">
+                        <strong>Мария</strong>
+                        <span>мама Софии, 7 лет</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p>«Дино-парк — это что-то невероятное! Дети были в шоке от динозавров, а квест "Планета Дино"
+                        идеально подошёл для 5-летних.»</p>
+                    <div class="review-author">
+                        <strong>Дмитрий</strong>
+                        <span>папа Алисы, 5 лет</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="form">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-left">
+                    <h2>Оставьте заявку — ответим за 15 минут</h2>
+                    <p>Или напишите в WhatsApp — так ещё быстрее!</p>
+                    <div class="form-contacts">
+                        <a href="https://wa.me/79912916400" class="wa-btn">
+                            💬 Написать в WhatsApp
+                        </a>
+                        <a href="tel:+74951336560" class="phone-link">
+                            📞 +7 495 133 65 60
+                        </a>
+                    </div>
+                    <div class="form-urgency">
+                        <div class="urgency-item">
+                            <span class="urgency-icon">🔥</span>
+                            <span>В июне уже забронировано <strong>40% суббот</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <form class="booking-form" id="booking-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" placeholder="Возраст ребёнка" min="3" max="17">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Кол-во гостей" min="5" max="100">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" placeholder="Желаемая дата">
+                        </div>
+                        <button type="submit" class="btn btn-pink btn-block btn-lg">Отправить заявку</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Частые вопросы</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Можно ли принести свой торт?</summary>
+                    <p>Да, вы можете принести свой торт. Также мы предлагаем торты от нашего кондитера — от 5 000 ₽ за 1
+                        кг.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Что входит в стоимость пакета?</summary>
+                    <p>Каждый пакет включает квест, еду, торт, декор и аттракционы. Подробный состав каждого пакета — в
+                        разделе «Пакеты».</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Как работает быстрый вход на аттракционы?</summary>
+                    <p>Дети проходят на аттракционы без очереди по специальным браслетам, которые выдаются в рамках
+                        пакета.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Нужен ли депозит?</summary>
+                    <p>Да, для подтверждения бронирования необходимо внести депозит 30% от стоимости. Остаток — в день
+                        праздника.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Работаете ли зимой?</summary>
+                    <p>Да! Круглогодичные локации — Мадагаскар и Базилик. Зимой также работает каток и зимние
+                        аттракционы.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Сказка - Парк Развлечений">
+                </div>
+                <p>Москва, ул. Крылатская, 18</p>
+            </div>
+            <div class="footer-contacts">
+                <a href="tel:+74951336560">+7 495 133 65 60</a>
+                <a href="mailto:event@parkskazka.com">event@parkskazka.com</a>
+                <a href="https://wa.me/79912916400">WhatsApp</a>
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 Парк Сказка. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Age filter pills
+        document.querySelectorAll('.age-pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                document.querySelectorAll('.age-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+            });
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Form submission
+        document.getElementById('booking-form').addEventListener('submit', e => {
+            e.preventDefault();
+            alert('Спасибо! Мы свяжемся с вами в течение 15 минут.');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
