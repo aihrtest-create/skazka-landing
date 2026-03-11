@@ -1,11 +1,11 @@
 // Data Dictionary
 const questsData = {
-  heist: { name: "Идеальное ограбление", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Взломать сейф, обойти лазерную защиту и раскрыть тайну — хит сезона!", img: "img/perf.png" },
-  cyber: { name: "Кибер Праздник", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Minecraft, Roblox, Brawl Stars — игра выходит в реальность.", img: "img/detective.png" },
-  dino: { name: "Планета Дино", basePricePerGuest: 4000, isShort: true, minGuests: 5, desc: "Путешествие к динозаврам и поиск древних артефактов.", img: "img/detective.png" },
-  mission: { name: "Миссия выполнима", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Деактивировать «бомбу», пройти полосу препятствий и спасти мир — шпионский квест!", img: "img/detective.png" },
-  blog: { name: "Блог Пати", basePricePerGuest: 5000, isShort: false, minGuests: 8, desc: "Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!", img: "img/detective.png" },
-  magic: { name: "Школа Волшебства", basePricePerGuest: 5000, isShort: false, minGuests: 8, desc: "Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!", img: "img/detective.png" }
+  heist: { name: "Идеальное ограбление", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Взломать сейф, обойти лазерную защиту и раскрыть тайну — хит сезона!", img: "img/perf.png" },
+  cyber: { name: "Кибер Праздник", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Minecraft, Roblox, Brawl Stars — игра выходит в реальность.", img: "img/detective.png" },
+  dino: { name: "Планета Дино", basePricePerGuest: 4000, isShort: true, minGuests: 5, ageRange: "4–8 лет", rides: 7, desc: "Путешествие к динозаврам и поиск древних артефактов.", img: "img/detective.png" },
+  mission: { name: "Миссия выполнима", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Деактивировать «бомбу», пройти полосу препятствий и спасти мир — шпионский квест!", img: "img/detective.png" },
+  blog: { name: "Блог Пати", basePricePerGuest: 5000, isShort: false, minGuests: 8, ageRange: "8–13 лет", rides: 10, desc: "Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!", img: "img/detective.png" },
+  magic: { name: "Школа Волшебства", basePricePerGuest: 5000, isShort: false, minGuests: 8, ageRange: "6–12 лет", rides: 10, desc: "Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!", img: "img/detective.png" }
 };
 
 const decorOptions = [
@@ -86,21 +86,34 @@ function renderStep() {
     // Step 0: Quest Info
     html = `
       <div class="mq-step mq-step-0">
-        <h2 class="mq-title">${qData.name}</h2>
-        <div class="mq-gallery">
-          <img src="${qData.img}" alt="${qData.name}" class="mq-main-img">
-          <div class="mq-thumbs">
-            <img src="img/party.png" alt="1">
-            <img src="img/hero.png" alt="2">
+        <div class="mq-hero-img">
+          <img src="${qData.img}" alt="${qData.name}">
+        </div>
+        <div class="mq-body">
+          <h2 class="mq-title">${qData.name}</h2>
+          <div class="mq-facts">
+            <div class="mq-fact">
+              <span class="mq-fact-icon">🕐</span>
+              <span class="mq-fact-label">${qData.isShort ? '1 час' : '2 часа'}</span>
+            </div>
+            <div class="mq-fact">
+              <span class="mq-fact-icon">🎂</span>
+              <span class="mq-fact-label">${qData.ageRange}</span>
+            </div>
+            <div class="mq-fact">
+              <span class="mq-fact-icon">👥</span>
+              <span class="mq-fact-label">от ${qData.minGuests} детей</span>
+            </div>
           </div>
-        </div>
-        <div class="mq-desc">
-          <p><strong>О квесте:</strong> ${qData.desc}</p>
-          <p>Длительность: ${qData.isShort ? '1 час' : '2 часа'}. Идеально для детей от ${qData.minGuests} человек.</p>
-          <div class="mq-review">«Дети в полном восторге! Лучший праздник.» — Анна</div>
-        </div>
-        <div class="mq-footer center">
-          <button class="btn btn-pink btn-lg mq-next">Собрать праздник →</button>
+          <p class="mq-about">${qData.desc}</p>
+          <div class="mq-rides">
+            <span class="mq-rides-icon">🎢</span>
+            <div class="mq-rides-text">
+              <strong>${qData.rides} аттракционов включено</strong>
+              <span>Подберём под возраст вашего ребёнка</span>
+            </div>
+          </div>
+          <button class="btn btn-pink btn-lg btn-block mq-next">Собрать праздник →</button>
         </div>
       </div>
     `;

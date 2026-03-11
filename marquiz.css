@@ -68,68 +68,100 @@
     flex-direction: column;
 }
 
-/* Step 0 - Info */
+/* Step 0 - Hero Card */
 .mq-step-0 {
-    padding: 40px 32px;
+    padding: 0;
+}
+
+.mq-hero-img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.mq-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mq-body {
+    padding: 28px 32px 32px;
 }
 
 .mq-title {
     font-family: var(--font-heading, 'Montserrat', sans-serif);
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 24px;
-    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.mq-gallery {
+.mq-facts {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     margin-bottom: 24px;
 }
 
-.mq-main-img {
+.mq-fact {
     flex: 1;
-    border-radius: var(--radius-md, 16px);
-    object-fit: cover;
-    height: 240px;
-    background: #EEE;
+    text-align: center;
+    background: var(--gray-50, #F8F9FC);
+    border-radius: var(--radius-sm, 12px);
+    padding: 14px 8px;
 }
 
-.mq-thumbs {
+.mq-fact-icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.mq-fact-label {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--gray-900, #1A1D2B);
+}
+
+.mq-about {
+    font-size: 15px;
+    color: var(--gray-600, #5A6178);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mq-rides {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: linear-gradient(135deg, var(--blue-light, #E8EEFF), #F0EDFF);
+    border-radius: var(--radius-sm, 12px);
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.mq-rides-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.mq-rides-text {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    width: 140px;
+    gap: 2px;
 }
 
-.mq-thumbs img {
-    width: 100%;
-    height: 112px;
-    border-radius: var(--radius-sm, 12px);
-    object-fit: cover;
-    background: #EEE;
-}
-
-.mq-desc p {
-    color: var(--gray-600, #5A6178);
+.mq-rides-text strong {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
     font-size: 15px;
-    margin-bottom: 12px;
-    line-height: 1.6;
+    font-weight: 800;
+    color: var(--gray-900, #1A1D2B);
 }
 
-.mq-review {
-    background: var(--gray-50, #F8F9FC);
-    padding: 16px;
-    border-radius: var(--radius-md, 16px);
-    font-style: italic;
-    font-size: 14px;
-    margin: 24px 0;
-    border-left: 4px solid var(--pink, #FF4D8D);
-}
-
-.mq-footer.center {
-    text-align: center;
-    margin-top: 32px;
+.mq-rides-text span {
+    font-size: 13px;
+    color: var(--gray-600, #5A6178);
 }
 
 /* Steps Progress */
@@ -388,27 +420,51 @@
         grid-template-columns: 1fr;
     }
 
-    .mq-gallery {
-        flex-direction: column;
+    .mq-hero-img {
+        height: 200px;
     }
 
-    .mq-thumbs {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .mq-thumbs img {
-        height: 80px;
-    }
-
-    .mq-step-content,
-    .mq-step-0,
-    .mq-footer {
-        padding: 24px;
+    .mq-body {
+        padding: 20px;
     }
 
     .mq-title {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .mq-facts {
+        gap: 8px;
+    }
+
+    .mq-fact {
+        padding: 10px 6px;
+    }
+
+    .mq-fact-icon {
+        font-size: 20px;
+    }
+
+    .mq-fact-label {
+        font-size: 12px;
+    }
+
+    .mq-rides {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .mq-rides-icon {
+        font-size: 26px;
+    }
+
+    .mq-rides-text strong {
+        font-size: 14px;
+    }
+
+    .mq-step-content,
+    .mq-footer {
+        padding: 24px;
     }
 
     .mq-subtitle {
