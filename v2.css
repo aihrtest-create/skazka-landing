@@ -98,7 +98,7 @@ button{cursor:pointer;font-family:inherit}
 .section-sub{color:var(--gray-400);font-size:16px}
 
 /* ===== PROGRAMS GRID ===== */
-.programs{padding:80px 0}
+.programs{padding:40px 0 80px}
 .programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .program-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);border:2px solid transparent;transition:var(--transition);cursor:pointer;position:relative}
 .program-card:hover{box-shadow:var(--shadow-md);border-color:var(--blue-light);transform:translateY(-4px)}

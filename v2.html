@@ -71,13 +71,13 @@
     <!-- PROGRAMS -->
     <section class="programs" id="programs">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Шаг 1</span>
+            <div class="section-header" style="margin-bottom: 24px;">
                 <h2>Выберите приключение</h2>
                 <p class="section-sub">Каждая программа — это 1.5-2 часа незабываемых эмоций</p>
             </div>
 
-            <div class="age-filter">
+            <!-- Фильтр скрыт, не удалён -->
+            <div class="age-filter" style="display: none;">
                 <button class="age-pill active" data-age="all">Все программы</button>
                 <button class="age-pill" data-age="4-7">🧸 4–7 лет</button>
                 <button class="age-pill" data-age="7-10">🔍 7–10 лет</button>
@@ -85,121 +85,102 @@
             </div>
 
             <div class="programs-grid">
-                <div class="program-card featured">
-                    <div class="program-badge">🏆 ХИТ №1</div>
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Идеальное ограбление">
-                    </div>
-                    <div class="program-info">
-                        <h3>Идеальное ограбление</h3>
-                        <div class="program-meta">
-                            <span>🕐 2 часа</span>
-                            <span>👥 от 10 детей</span>
-                            <span>🎯 7-12 лет</span>
+                <div class="program-card featured" data-quest="heist">
+                    <img src="img/perf.png" class="program-card-bg" alt="Идеальное ограбление">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Идеальное ограбление</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Взломать сейф, обойти лазерную защиту и раскрыть тайну — самый популярный квест парка!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>48 000 ₽</strong></div>
-                            <button class="btn btn-outline" data-quest="heist">Выбрать</button>
-                        </div>
+                        <p class="program-card-desc">Взломать сейф, обойти лазерную защиту и раскрыть тайну — самый
+                            популярный квест парка!</p>
                     </div>
                 </div>
 
-                <div class="program-card">
-                    <div class="program-badge new">🆕 НОВИНКА</div>
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Кибер Праздник">
-                    </div>
-                    <div class="program-info">
-                        <h3>Кибер Праздник</h3>
-                        <div class="program-meta">
-                            <span>🕐 2 часа</span>
-                            <span>👥 от 10 детей</span>
-                            <span>🎯 7-12 лет</span>
+                <div class="program-card" data-quest="cyber">
+                    <img src="img/detective.png" class="program-card-bg" alt="Кибер Праздник">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Кибер Праздник</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Minecraft, Roblox, Brawl Stars — геймерский квест для настоящих кибер-героев!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>39 000 ₽</strong></div>
-                            <button class="btn btn-outline" data-quest="cyber">Выбрать</button>
-                        </div>
+                        <p class="program-card-desc">Minecraft, Roblox, Brawl Stars — игра выходит в реальность.</p>
                     </div>
                 </div>
 
-                <div class="program-card">
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Миссия выполнима">
-                    </div>
-                    <div class="program-info">
-                        <h3>Миссия выполнима</h3>
-                        <div class="program-meta">
-                            <span>🕐 2 часа</span>
-                            <span>👥 от 10 детей</span>
-                            <span>🎯 7-12 лет</span>
+                <div class="program-card" data-quest="mission">
+                    <img src="img/detective.png" class="program-card-bg" alt="Миссия выполнима">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Миссия выполнима</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Деактивировать «бомбу», пройти полосу препятствий и спасти мир — для смелых!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>51 000 ₽</strong></div>
-                            <a href="#form" class="btn btn-outline">Выбрать</a>
-                        </div>
+                        <p class="program-card-desc">Деактивировать «бомбу», пройти полосу препятствий и спасти мир!</p>
                     </div>
                 </div>
 
-                <div class="program-card">
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Блог Пати">
-                    </div>
-                    <div class="program-info">
-                        <h3>Блог Пати</h3>
-                        <div class="program-meta">
-                            <span>🕐 2 часа</span>
-                            <span>👥 от 10 детей</span>
-                            <span>🎯 9-13 лет</span>
+                <div class="program-card extra-card" data-quest="dino" style="display:none">
+                    <img src="img/detective.png" class="program-card-bg" alt="Планета Дино">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Планета Дино</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>62 000 ₽</strong></div>
-                            <a href="#form" class="btn btn-outline">Выбрать</a>
-                        </div>
+                        <p class="program-card-desc">Путешествие к динозаврам и поиск древних артефактов.</p>
                     </div>
                 </div>
 
-                <div class="program-card">
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Планета Дино">
-                    </div>
-                    <div class="program-info">
-                        <h3>Планета Дино</h3>
-                        <div class="program-meta">
-                            <span>🕐 1 час</span>
-                            <span>👥 от 5 детей</span>
-                            <span>🎯 4-8 лет</span>
+                <div class="program-card extra-card" data-quest="blog" style="display:none">
+                    <img src="img/detective.png" class="program-card-bg" alt="Блог Пати">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Блог Пати</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Лёгкий старт — идеальный квест для самых маленьких искателей приключений!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>31 000 ₽</strong></div>
-                            <button class="btn btn-outline" data-quest="dino">Выбрать</button>
-                        </div>
+                        <p class="program-card-desc">Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!
+                        </p>
                     </div>
                 </div>
 
-                <div class="program-card">
-                    <div class="program-img">
-                        <img src="img/detective.png" alt="Школа Волшебства">
-                    </div>
-                    <div class="program-info">
-                        <h3>Школа Волшебства</h3>
-                        <div class="program-meta">
-                            <span>🕐 2 часа</span>
-                            <span>👥 от 10 детей</span>
-                            <span>🎯 6-10 лет</span>
+                <div class="program-card extra-card" data-quest="magic" style="display:none">
+                    <img src="img/detective.png" class="program-card-bg" alt="Школа Волшебства">
+                    <div class="program-card-overlay">
+                        <div class="program-card-title">
+                            <h3>Школа Волшебства</h3>
+                            <span class="program-card-arrow-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg></span>
                         </div>
-                        <p>Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!</p>
-                        <div class="program-footer">
-                            <div class="program-price">от <strong>40 000 ₽</strong></div>
-                            <a href="#form" class="btn btn-outline">Выбрать</a>
-                        </div>
+                        <p class="program-card-desc">Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные
+                            палочки!</p>
                     </div>
                 </div>
+            </div>
+
+            <div style="text-align:center;margin-top:24px;">
+                <button class="btn btn-outline" id="show-more-btn">Смотреть ещё ↓</button>
             </div>
 
             <div class="programs-cta">
@@ -422,6 +403,12 @@
         document.getElementById('booking-form').addEventListener('submit', e => {
             e.preventDefault();
             alert('Спасибо! Мы свяжемся с вами в течение 15 минут.');
+        });
+
+        // Show more cards
+        document.getElementById('show-more-btn').addEventListener('click', function() {
+            document.querySelectorAll('.extra-card').forEach(c => c.style.display = '');
+            this.style.display = 'none';
         });
 
         // Header scroll effect

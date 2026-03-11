@@ -1,8 +1,11 @@
 // Data Dictionary
 const questsData = {
-  heist: { name: "Идеальное ограбление", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Взломать сейф, обойти лазерную защиту и раскрыть тайну — хит сезона!", img: "img/detective.png" },
+  heist: { name: "Идеальное ограбление", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Взломать сейф, обойти лазерную защиту и раскрыть тайну — хит сезона!", img: "img/perf.png" },
   cyber: { name: "Кибер Праздник", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Minecraft, Roblox, Brawl Stars — игра выходит в реальность.", img: "img/detective.png" },
-  dino: { name: "Планета Дино", basePricePerGuest: 4000, isShort: true, minGuests: 5, desc: "Путешествие к динозаврам и поиск древних артефактов.", img: "img/detective.png" }
+  dino: { name: "Планета Дино", basePricePerGuest: 4000, isShort: true, minGuests: 5, desc: "Путешествие к динозаврам и поиск древних артефактов.", img: "img/detective.png" },
+  mission: { name: "Миссия выполнима", basePricePerGuest: 6000, isShort: false, minGuests: 10, desc: "Деактивировать «бомбу», пройти полосу препятствий и спасти мир — шпионский квест!", img: "img/detective.png" },
+  blog: { name: "Блог Пати", basePricePerGuest: 5000, isShort: false, minGuests: 8, desc: "Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!", img: "img/detective.png" },
+  magic: { name: "Школа Волшебства", basePricePerGuest: 5000, isShort: false, minGuests: 8, desc: "Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!", img: "img/detective.png" }
 };
 
 const decorOptions = [
@@ -53,8 +56,8 @@ document.querySelector('.marquiz-close').addEventListener('click', () => {
 });
 
 // Open Modal
-document.querySelectorAll('button[data-quest]').forEach(btn => {
-  btn.addEventListener('click', function (e) {
+document.querySelectorAll('.program-card[data-quest]').forEach(card => {
+  card.addEventListener('click', function (e) {
     const qid = this.dataset.quest;
     openModal(qid);
   });
