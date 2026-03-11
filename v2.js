@@ -3,7 +3,7 @@ const questsData = {
   heist: { name: "Идеальное ограбление", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Взломать сейф, обойти лазерную защиту и раскрыть тайну — хит сезона!", img: "img/perf.png" },
   cyber: { name: "Кибер Праздник", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Minecraft, Roblox, Brawl Stars — игра выходит в реальность.", img: "img/detective.png" },
   dino: { name: "Планета Дино", basePricePerGuest: 4000, isShort: true, minGuests: 5, ageRange: "4–8 лет", rides: 7, desc: "Путешествие к динозаврам и поиск древних артефактов.", img: "img/detective.png" },
-  mission: { name: "Миссия выполнима", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Деактивировать «бомбу», пройти полосу препятствий и спасти мир — шпионский квест!", img: "img/detective.png" },
+  mission: { name: "Очень странный парк", basePricePerGuest: 6000, isShort: false, minGuests: 10, ageRange: "7–13 лет", rides: 10, desc: "Деактивировать «бомбу», пройти полосу препятствий и спасти мир — шпионский квест!", img: "img/over.png" },
   blog: { name: "Блог Пати", basePricePerGuest: 5000, isShort: false, minGuests: 8, ageRange: "8–13 лет", rides: 10, desc: "Тренды, пранки и звёздная жизнь — вечеринка для будущих блогеров!", img: "img/detective.png" },
   magic: { name: "Школа Волшебства", basePricePerGuest: 5000, isShort: false, minGuests: 8, ageRange: "6–12 лет", rides: 10, desc: "Поиск крестражей в стиле Хогвартса — магия, зелья и волшебные палочки!", img: "img/detective.png" }
 };
