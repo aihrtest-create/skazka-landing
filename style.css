@@ -914,7 +914,7 @@ img {
 /* ===== FORM ===== */
 .form-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, var(--blue) 0%, #4F46E5 100%);
+  background: var(--blue);
 }
 
 .form-wrapper {
@@ -1127,6 +1127,10 @@ img {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 992px) {
   .nav {
+    display: none;
+  }
+
+  .phone {
     display: none;
   }
 
